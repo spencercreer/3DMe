@@ -20,12 +20,12 @@ function init() {
 	// const material = new THREE.MeshBasicMaterial({ map: texture });
 
 	const materials = [
-		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('textures/headshot.jpg')}),
-		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('textures/code.jpg')}),
-		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('textures/military_satellite.jpg')}),
-		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('textures/neuschwanstein_castle.jpg')}),
-		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('textures/sweden.jpg')}),
-		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('textures/switzerland.jpg')}),
+		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('public/textures/headshot.jpg')}),
+		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('public/textures/code.jpg')}),
+		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('public/textures/military_satellite.jpg')}),
+		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('public/textures/neuschwanstein_castle.jpg')}),
+		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('public/textures/sweden.jpg')}),
+		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('public/textures/switzerland.jpg')}),
 	]
 
 	cube = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
