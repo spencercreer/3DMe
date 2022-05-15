@@ -16,19 +16,19 @@ function init() {
 
 	const geometry = new THREE.BoxGeometry(3, 3, 3);
 
-	const texture = new THREE.TextureLoader().load('textures/headshot.jpg');
-	const material = new THREE.MeshBasicMaterial({ map: texture });
+	// const texture = new THREE.TextureLoader().load('textures/sweden.jpg');
+	// const material = new THREE.MeshBasicMaterial({ map: texture });
 
 	const materials = [
-		new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('textures/headshot.jpg')}),
-		new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('textures/code.jpg')}),
-		new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('textures/military_satellite.jpg')}),
-		new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('textures/neuschwanstein_castle.jpg')}),
-		new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('textures/sweden.jpg')}),
-		new THREE.MeshLambertMaterial({map: THREE.ImageUtils.loadTexture('textures/switzerland.jpg')}),
+		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('textures/headshot.jpg')}),
+		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('textures/code.jpg')}),
+		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('textures/military_satellite.jpg')}),
+		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('textures/neuschwanstein_castle.jpg')}),
+		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('textures/sweden.jpg')}),
+		new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('textures/switzerland.jpg')}),
 	]
 
-	cube = new THREE.Mesh(geometry, materials);
+	cube = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
 	scene.add(cube);
 
 	camera.position.z = 5;

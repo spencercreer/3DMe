@@ -1,0 +1,26 @@
+{
+  "name": "3dmi",
+  "version": "1.0.0",
+  "description": "A 3D portfolio using three.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spencercreer/3DMi.git"
+  },
+  "author": "Spencer Creer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spencercreer/3DMi/issues"
+  },
+  "homepage": "https://github.com/spencercreer/3DMi#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
