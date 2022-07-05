@@ -5,18 +5,19 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spencercreer/3DMi.git"
+    "url": "git+https://github.com/spencercreer/3DMe.git"
   },
   "author": "Spencer Creer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spencercreer/3DMi/issues"
+    "url": "https://github.com/spencercreer/3DMe/issues"
   },
-  "homepage": "https://github.com/spencercreer/3DMi#readme",
+  "homepage": "https://github.com/spencercreer/3DMe#readme",
   "dependencies": {
     "express": "^4.18.1"
   },
