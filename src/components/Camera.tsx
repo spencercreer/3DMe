@@ -23,9 +23,14 @@ const Camera = ({ cameraPos, setCameraPos, ...props }: CameraProps) => {
 //     camera.current.translateZ(1000);
 //   }, []);
 
+// useThree(({camera}) => {
+//   camera.rotation.set(Math.PI, 0, 0);
+// });
+
   return (
     <PerspectiveCamera
     position={cameraPos}
+    makeDefault
     />
   );
 };

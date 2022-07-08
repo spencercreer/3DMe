@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import * as THREE from "three";
 import { useFrame, useLoader } from "@react-three/fiber";
+import { Text } from "@react-three/drei";
 import EarthDayMap from "../assets/textures/Earth/8k_earth_daymap.jpg";
 import EarthNormalMap from "../assets/textures/Earth/8k_earth_normal_map.jpg";
 import EarthSpecularMap from "../assets/textures/Earth/8k_earth_specular_map.jpg";
@@ -21,15 +22,25 @@ function Earth() {
         cloudsMesh.current.rotation.y = clock.getElapsedTime() / 3
     })
 
-    const { data, loading } = useGet('https://api.le-systeme-solaire.net/rest/bodies/terre')
-    console.log(data)
-    if (loading) {
-        // return <div>Loading...</div>
-    } else if (data != {}) {
-        // const radius = data.equaRadius
-    }
+    const fontProps = { font: '/Inter-Bold.woff', fontSize: 2, letterSpacing: -0.05, lineHeight: 1, 'material-toneMapped': false }
+
+
+    // const { data, loading } = useGet('https://api.le-systeme-solaire.net/rest/bodies/terre')
+    // console.log(data)
+    // if (loading) {
+    //     return <div>Loading...</div>
+    // } else {
+    //     const radius = data.equaRadius
+    // }
 
     return (
+        <>
+            {
+                active &&
+                <Text position={[0, 3, 0]} {...fontProps}>
+                    hello world!
+                </Text>
+            }
             <group
                 scale={active ? 1.5 : 1}
                 onPointerEnter={() => setActive(true)}
@@ -55,6 +66,7 @@ function Earth() {
                     />
                 </mesh>
             </group>
+        </>
     )
 }
 

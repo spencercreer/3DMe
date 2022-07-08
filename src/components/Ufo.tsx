@@ -50,7 +50,7 @@ function Ufo({ setCameraPos, ...props }: CameraProps) {
                 ufoMesh.current.position.x += 1;
             }
             if (setCameraPos) {
-                setCameraPos(new THREE.Vector3(ufoMesh.current.position.x, ufoMesh.current.position.y, ufoMesh.current.position.z ))
+                setCameraPos(new THREE.Vector3(ufoMesh.current.position.x, ufoMesh.current.position.y, 10 ))
             }
             // setMovement((m) => ({ ...m, [moveFieldByKey(e.code)]: true }))
         }
