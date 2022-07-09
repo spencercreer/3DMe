@@ -24,15 +24,7 @@ function Earth() {
 
     const fontProps = { font: '/Inter-Bold.woff', fontSize: 2, letterSpacing: -0.05, lineHeight: 1, 'material-toneMapped': false }
 
-
-    // const { data, loading } = useGet('https://api.le-systeme-solaire.net/rest/bodies/terre')
-    // console.log(data)
-    // if (loading) {
-    //     return <div>Loading...</div>
-    // } else {
-    //     const radius = data.equaRadius
-    // }
-
+    // const radius = planetData.equaRadius
     return (
         <>
             {
@@ -68,6 +60,7 @@ function Earth() {
             </group>
         </>
     )
+
 }
 
 export default Earth

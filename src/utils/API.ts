@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import { PlanetResponse } from "./types";
 
 export const useGet = (url: string) => {
-    const [state, setState] = useState({ data: {}, loading: true })
+    const [response, setResponse] = useState<PlanetResponse>()
+    const [loading, setLoading] = useState<boolean>(true)
 
     useEffect(() => {
-        setState(state => ({ ...state, loading: true }))
+        setLoading(true)
         fetch(url, {
             method: 'GET',
             headers: {
@@ -12,10 +14,11 @@ export const useGet = (url: string) => {
             }
         })
             .then(res => res.json())
-            .then(data => {
-                setState({ data, loading: false })
+            .then((data: PlanetResponse) => {
+                setResponse(data)
+                setLoading(false)
             })
-    }, [url, setState])
+    }, [url, setResponse])
 
-    return state
+    return { response, loading }
 }
