@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/3DMe/static/css/main.fb9f2568.css",
-    "main.js": "/3DMe/static/js/main.f7ecde9b.js",
+    "main.js": "/3DMe/static/js/main.7ad90231.js",
     "static/js/787.abe77589.chunk.js": "/3DMe/static/js/787.abe77589.chunk.js",
+    "static/media/8k_mercury.jpg": "/3DMe/static/media/8k_mercury.b3bc4c353800a4a2a211.jpg",
     "static/media/8k_moon.jpg": "/3DMe/static/media/8k_moon.40068980d0831ca8290f.jpg",
     "static/media/8k_earth_clouds.jpg": "/3DMe/static/media/8k_earth_clouds.08fcd80007fae8fc7170.jpg",
+    "static/media/8k_mars.jpg": "/3DMe/static/media/8k_mars.a48029948504cbb4d125.jpg",
     "static/media/8k_earth_daymap.jpg": "/3DMe/static/media/8k_earth_daymap.54672c1f3ba121d80470.jpg",
     "static/media/8k_sun.jpg": "/3DMe/static/media/8k_sun.b34e6ead10e18ad3ad77.jpg",
     "static/media/8k_earth_specular_map.jpg": "/3DMe/static/media/8k_earth_specular_map.7b4efa59933b470e3776.jpg",
     "static/media/8k_earth_normal_map.jpg": "/3DMe/static/media/8k_earth_normal_map.930cf2e99bc548140c29.jpg",
     "index.html": "/3DMe/index.html",
     "main.fb9f2568.css.map": "/3DMe/static/css/main.fb9f2568.css.map",
-    "main.f7ecde9b.js.map": "/3DMe/static/js/main.f7ecde9b.js.map",
+    "main.7ad90231.js.map": "/3DMe/static/js/main.7ad90231.js.map",
     "787.abe77589.chunk.js.map": "/3DMe/static/js/787.abe77589.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb9f2568.css",
-    "static/js/main.f7ecde9b.js"
+    "static/js/main.7ad90231.js"
   ]
 }
