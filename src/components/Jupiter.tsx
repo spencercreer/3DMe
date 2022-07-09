@@ -2,18 +2,18 @@ import { useState, useEffect, useRef } from "react";
 import * as THREE from "three";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { Text } from "@react-three/drei";
-import MercuryMap from "../assets/textures/Mercury/8k_mercury.jpg";
+import JupiterMap from "../assets/textures/Jupiter/8k_jupiter.jpg";
 
-function Mercury() {
+function Jupiter() {
     const [active, setActive] = useState(false)
     const [colorMap] = useLoader(
         THREE.TextureLoader,
-        [MercuryMap]
+        [JupiterMap]
     );
 
-    const mercuryMesh = useRef<THREE.Mesh>(null!)
+    const jupiterMesh = useRef<THREE.Mesh>(null!)
     useFrame(({ clock }) => {
-        mercuryMesh.current.rotation.y = clock.getElapsedTime() / 4
+        jupiterMesh.current.rotation.y = clock.getElapsedTime() / 4
     });
 
     const fontProps = { font: '/Inter-Bold.woff', fontSize: 2, letterSpacing: -0.05, lineHeight: 1, 'material-toneMapped': false }
@@ -29,15 +29,15 @@ function Mercury() {
 
             <mesh
                 scale={active ? 1.5 : 1}
-                position={[-10, 0, 0]}
+                position={[26, 0, 0]}
                 onPointerEnter={() => setActive(true)}
                 onPointerLeave={() => setActive(false)}
-                ref={mercuryMesh}
+                ref={jupiterMesh}
             >
-                <sphereGeometry args={[.1, 32, 32]} />
+                <sphereGeometry args={[6, 32, 32]} />
                 <meshStandardMaterial
                     map={colorMap}
-                    metalness={0.4}
+                    metalness={1}
                     roughness={0.7}
                 />
             </mesh>
@@ -46,4 +46,4 @@ function Mercury() {
 
 }
 
-export default Mercury
+export default Jupiter

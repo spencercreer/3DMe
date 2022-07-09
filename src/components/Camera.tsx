@@ -8,6 +8,7 @@ interface CameraProps {
   setCameraPos?: React.Dispatch<React.SetStateAction<any>>;
 }
 
+// point camera at UFO rather than earth
 const Camera = ({ cameraPos, setCameraPos, ...props }: CameraProps) => {
 
 //   const camera = useRef<OrthoCamera>(null!);
