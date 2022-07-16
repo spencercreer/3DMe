@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import * as THREE from "three";
 import { useFrame, useLoader } from "@react-three/fiber";
 import SunMap from "../assets/textures/Sun/8k_sun.jpg";
+import { useGet } from "../utils/API";
 
 function Sun() {
     const [active, setActive] = useState(false)
@@ -9,10 +10,12 @@ function Sun() {
         THREE.TextureLoader,
         [SunMap]
     );
-    const sunMesh = useRef<THREE.Mesh>(null!)
+
+    const sunMesh = useRef<THREE.Mesh>(null!);
     useFrame(({ clock }) => {
         sunMesh.current.rotation.y = clock.getElapsedTime() / 4
-    })
+    });
+
     return (
         <>
             <pointLight color="#f6f3ea" position={[-10, 0, 0]} intensity={1} />

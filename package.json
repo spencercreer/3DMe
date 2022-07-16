@@ -2,7 +2,7 @@
   "name": "three-d-me",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://spencercreer.github.io/3DMe",
+  "homepage": "https://spencercreer.github.io/Hello_Worlds",
   "dependencies": {
     "@react-three/drei": "^9.16.0",
     "@react-three/fiber": "^8.0.27",

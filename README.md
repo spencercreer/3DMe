@@ -22,7 +22,7 @@ Hello Worlds is a 3D modal of the solar system built with three.js, React-three-
 * [Contact](#contact)
 
 ## Links
-Published URL: [https://commit-nutrition.herokuapp.com/](https://commit-nutrition.herokuapp.com/)
+Published URL: [https://spencercreer.github.io/Hello_Worlds/](https://spencercreer.github.io/Hello_Worlds/)
 
 Repository: [https://github.com/spencercreer/meal-planner](https://github.com/spencercreer/meal-planner)
 
